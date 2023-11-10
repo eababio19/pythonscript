@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-3">
+        <h1>Welcome to the Akan Names Generator!</h1>
+        <p>Discover your unique Akan name and its meaning by inputting your date of birth and gender. Immerse yourself in Ghanaian culture through this delightful experience.</p>
+        <p>How It Works:</p>
+        <ul>
+            <li>Input Your Details: Provide your date of birth (in YYYY-MM-DD format) and select your gender.</li>
+            <li>Generate Akan Name: Our app calculates your Akan name based on the day of the week you were born and your gender.</li>
+            <li>Uncover the Meaning: Dive deeper into Ghanaian culture by discovering the meaning behind your Akan name.</li>
+        </ul>
+        <p>Why Akan Names?</p>
+        <p>Akan names are more than just identifiers; they carry cultural significance tied to the day of the week you were born. Immerse yourself in the beauty of Ghanaian traditions with every generated name.</p>
+        <p>Bootstrap Magic:</p>
+        <p>Our app doesn't just provide cultural insights; it's also a visual treat! We've integrated Bootstrap for a sleek and responsive design, ensuring a seamless user experience.</p>
+    </div>
+    <!-- Update your navigation bar or any other relevant location -->
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <!-- ... existing navigation links ... -->
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a> <!-- Add this line -->
+        </li>
+        <!-- ... other navigation links ... -->
+    </ul>
+    <!-- ... existing navigation content ... -->
+</nav>
+
+{% endblock %}
