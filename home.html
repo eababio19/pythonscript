@@ -29,7 +29,7 @@
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-link" href="{% url 'akanapp:about' %}">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -66,7 +66,7 @@
 
     <!-- Akan Names Generator Form -->
     <h1>Generate Your Akan Name</h1>
-    <form method="post" action="{% url 'home' %}" class="mb-3">
+    <form method="post" action="{% url 'akanapp:home' %}" class="mb-3">
         {% csrf_token %}
         <div class="form-group">
             <label for="date_of_birth">Date of Birth (YYYY-MM-DD)</label>
